@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brasil Uniformes</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; background: #f8f8f8; }
+    .hero {
+      background: url('banner.png') no-repeat center/cover;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+      color: #0f2b5b;
+    }
+    .hero h1 { font-size: 3rem; max-width: 500px; }
+    .hero a {
+      background: #2e7d32; color: white; text-decoration: none;
+      padding: 1rem 2rem; margin-top: 1rem; display: inline-block;
+    }
+    .section { padding: 2rem; background: white; margin-top: 1rem; }
+    .section h2 { text-align: center; color: #0f2b5b; }
+    .items { display: flex; justify-content: space-around; flex-wrap: wrap; gap: 1rem; margin-top: 1rem; text-align: center; }
+    .item { width: 120px; }
+    .sobre-contato { display: flex; flex-wrap: wrap; justify-content: space-around; background: white; padding: 2rem; margin-top: 1rem; }
+    .sobre, .contato { max-width: 400px; flex: 1 1 300px; }
+    .contato input, .contato textarea {
+      width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border: 1px solid #ccc;
+    }
+    .contato button {
+      background: #2e7d32; color: white; border: none; padding: 0.7rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>UNIFORMES QUE DESTACAM SUA MARCA</h1>
+    <a href="#contato">SOLICITE UM ORÇAMENTO</a>
+  </div>
+
+  <div class="section">
+    <h2>PRODUTOS</h2>
+    <div class="items">
+      <div class="item"><img src="#" width="80"><p>Camisas Polo</p></div>
+      <div class="item"><img src="#" width="80"><p>Camisas Sociais</p></div>
+      <div class="item"><img src="#" width="80"><p>Bonés</p></div>
+      <div class="item"><img src="#" width="80"><p>Jalecos</p></div>
+      <div class="item"><img src="#" width="80"><p>Camisetas</p></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>NOSSOS DIFERENCIAIS</h2>
+    <div class="items">
+      <div class="item"><img src="#" width="40"><p>Silk Screen</p></div>
+      <div class="item"><img src="#" width="40"><p>Sublimação</p></div>
+      <div class="item"><img src="#" width="40"><p>Bordado</p></div>
+      <div class="item"><img src="#" width="40"><p>Entrega Rápida</p></div>
+      <div class="item"><img src="#" width="40"><p>Atendimento Personalizado</p></div>
+    </div>
+  </div>
+
+  <div class="sobre-contato" id="contato">
+    <div class="sobre">
+      <h2>SOBRE NÓS</h2>
+      <p>Brasil Uniformes oferece qualidade, agilidade e personalização. Nosso foco é destacar a marca do seu negócio com conforto e estilo.</p>
+    </div>
+    <div class="contato">
+      <h2>CONTATO</h2>
+      <form onsubmit="alert('Mensagem enviada!'); return false;">
+        <input type="text" placeholder="Nome" required />
+        <input type="email" placeholder="E-mail" required />
+        <input type="tel" placeholder="Telefone" />
+        <input type="text" placeholder="Assunto" />
+        <textarea rows="4" placeholder="Mensagem"></textarea>
+        <button type="submit">ENVIAR MENSAGEM</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
